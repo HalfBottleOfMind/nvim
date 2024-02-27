@@ -6,17 +6,15 @@ return {
 	config = function()
 		local lspconfig = require('lspconfig')
 		local config = require('hbom.lazy.plugins.configs.lspconfig')
+		local servers = {
+			'gopls',
+			'lua_ls',
+		}
 
-		config.lua_ls.capabilities = require('cmp_nvim_lsp').default_capabilities()
-		config.gopls.capabilities = require('cmp_nvim_lsp').default_capabilities()
-
-		lspconfig.gopls.setup(config.gopls)
-		lspconfig.lua_ls.setup(config.lua_ls)
-
-		--[[vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
-		vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
-		vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-		vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
+		for _, lsp in ipairs(servers) do
+			config[lsp].capabilities = require('cmp_nvim_lsp').default_capabilities()
+			lspconfig[lsp].setup(config[lsp])
+		end
 
 		vim.api.nvim_create_autocmd('LspAttach', {
 			group = vim.api.nvim_create_augroup('UserLspConfig', {}),
@@ -40,6 +38,6 @@ return {
 					vim.lsp.buf.format { async = true }
 				end, opts)
 			end,
-		})]]
+		})
 	end,
 }

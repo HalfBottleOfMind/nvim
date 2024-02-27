@@ -11,6 +11,7 @@ config.gopls = {
 			analyses = {
 				unusedparams = true,
 			},
+			staticcheck = true,
 		},
 	},
 }
