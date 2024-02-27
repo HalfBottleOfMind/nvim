@@ -9,3 +9,6 @@ opt.shiftwidth = 4
 opt.fileformat = "unix"
 
 opt.termguicolors = true
+
+opt.splitright = true
+opt.splitbelow = true

@@ -680,4 +680,4 @@ local config = {
   },
 }
 
-require('neo-tree').setup(config)
+return config
