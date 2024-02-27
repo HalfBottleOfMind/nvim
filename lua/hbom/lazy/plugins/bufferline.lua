@@ -8,6 +8,6 @@ return {
 			}
 		}
 
-		require('bufferline').setup(config)
+--		require('bufferline').setup(config)
 	end,
 }
