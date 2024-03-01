@@ -4,8 +4,26 @@ return {
 	config = function()
 		local config = {
 			options = {
-				diagnostics = 'nvim_lsp'
-			}
+				diagnostics = 'nvim_lsp',
+				offsets = {
+					{
+						filetype = 'neo-tree',
+						text = 'Neotree',
+						text_align = 'center',
+						separator = true,
+					},
+					{
+						filetype = 'neotest-summary',
+						text = 'Neotest',
+						text_align = 'center',
+						separator = true,
+					},
+				},
+				indicator = {
+					style = 'icon',
+				},
+				show_buffer_close_icons = false,
+			},
 		}
 
 		require('bufferline').setup(config)
