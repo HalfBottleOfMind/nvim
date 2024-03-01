@@ -6,7 +6,7 @@ return {
 		'nvim-treesitter/nvim-treesitter',
 
 		'nvim-neotest/neotest-go',
-		'olimorris/neotest-phpunit',
+		'halfbottleofmind/neotest-phpunit', -- TODO: change to original repository after PR merge
 	},
 	config = function()
 		local neotest_ns = vim.api.nvim_create_namespace('neotest')
