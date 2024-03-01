@@ -6,6 +6,7 @@ return {
 		'nvim-treesitter/nvim-treesitter',
 
 		'nvim-neotest/neotest-go',
+		'olimorris/neotest-phpunit',
 	},
 	config = function()
 		local neotest_ns = vim.api.nvim_create_namespace('neotest')
@@ -20,8 +21,16 @@ return {
 
 		require('neotest').setup({
 			adapters = {
-				require('neotest-go')
+				require('neotest-go'),
+				require('neotest-phpunit')({
+					phpunit_cmd = './vendor/bin/phpunit',
+					filter_dirs = { 'vendor' },
+				}),
 			},
 		})
+
+		vim.keymap.set('n', '<leader>ts', function()
+			require('neotest').summary.toggle()
+		end)
 	end,
 }

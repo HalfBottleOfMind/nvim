@@ -42,4 +42,6 @@ config.lua_ls = {
 	},
 }
 
+config.phpactor = {}
+
 return config
