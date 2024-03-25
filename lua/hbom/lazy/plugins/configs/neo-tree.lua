@@ -362,7 +362,7 @@ local config = {
     mappings = {
       ["<space>"] = {
           "toggle_node",
-          nowait = false, -- disable `nowait` if you have existing combos starting with this char that you want to use
+          nowait = true, -- disable `nowait` if you have existing combos starting with this char that you want to use
       },
       ["<2-LeftMouse>"] = "open",
       ["<cr>"] = "open",
@@ -388,7 +388,7 @@ local config = {
         "add",
         -- some commands may take optional config options, see `:h neo-tree-mappings` for details
         config = {
-          show_path = "none", -- "none", "relative", "absolute"
+          show_path = "relative", -- "none", "relative", "absolute"
         }
       },
       ["A"] = "add_directory", -- also accepts the config.show_path and config.insert_as options.
@@ -520,7 +520,7 @@ local config = {
     group_empty_dirs = false, -- when true, empty folders will be grouped together
     search_limit = 50, -- max number of search results when using filters
     follow_current_file = {
-      enabled = false, -- This will find and focus the file in the active buffer every time
+      enabled = true, -- This will find and focus the file in the active buffer every time
       --               -- the current file is changed while the tree is open.
       leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
     },
