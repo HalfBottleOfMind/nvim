@@ -4,6 +4,7 @@ return {
 		'nvim-lua/plenary.nvim',
 		'antoinemadec/FixCursorHold.nvim',
 		'nvim-treesitter/nvim-treesitter',
+		'nvim-neotest/nvim-nio',
 
 		'nvim-neotest/neotest-go',
 		'halfbottleofmind/neotest-phpunit', -- TODO: change to original repository after PR merge
