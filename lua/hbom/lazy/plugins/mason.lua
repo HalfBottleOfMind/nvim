@@ -6,6 +6,9 @@ return {
 			'lua-language-server',
 			'golangci-lint',
 			'phpactor',
+			'clangd',
+			'clang-format',
+			'codelldb',
 		},
 	},
 }

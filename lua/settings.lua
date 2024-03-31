@@ -5,6 +5,7 @@ opt.relativenumber = true
 opt.cursorline = true
 opt.tabstop = 4
 opt.shiftwidth = 4
+opt.so = 999
 
 opt.fileformat = "unix"
 

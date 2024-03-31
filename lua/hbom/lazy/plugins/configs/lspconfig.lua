@@ -42,7 +42,10 @@ config.lua_ls = {
 	},
 }
 
-config.phpactor = {
+config.intelephense = {}
+config.phpactor = {}
+
+config.clangd = {
 }
 
 return config

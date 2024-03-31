@@ -9,7 +9,9 @@ return {
 		local servers = {
 			'gopls',
 			'lua_ls',
+			-- 'intelephense',
 			'phpactor',
+			'clangd',
 		}
 
 		for _, lsp in ipairs(servers) do
