@@ -3,14 +3,6 @@
 -- vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
 -- vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
 
-local M = {}
-
-M.dap = {
-	plugin = true,
-	n = {
-		['<leader>db'] = {'<cmd> DapToggleBreakpoint <CR>', 'Add breakpoint at line'},
-		['<leader>dr'] = {'<cmd> DapContinue <CR>', 'Start or continue the debugger'},
-	}
-}
-
-return M
+vim.keymap.set('n', '<leader>ff', function() require('telescope.builtin').find_files() end)
+vim.keymap.set('n', '<leader>fg', function() require('telescope.builtin').live_grep() end)
+vim.keymap.set('n', '<leader>fb', function() require('telescope.builtin').buffers() end)
