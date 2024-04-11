@@ -14,7 +14,7 @@ local config = {
   close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
   default_source = "filesystem", -- you can choose a specific source `last` here which indicates the last used source
   enable_diagnostics = true,
-  enable_git_status = false,
+  enable_git_status = true,
   enable_modified_markers = true, -- Show markers for files with unsaved changes.
   enable_opened_markers = true,   -- Enable tracking of opened files. Required for `components.name.highlight_opened_files`
   enable_refresh_on_write = true, -- Refresh the tree when a file is written. Only used if `use_libuv_file_watcher` is false.
@@ -55,7 +55,7 @@ local config = {
     sources = {
       { source = "filesystem" },
       { source = "buffers" },
-      -- { source = "git_status" },
+      { source = "git_status" },
     },
     content_layout = "start", -- only with `tabs_layout` = "equal", "focus"
     --                start  : |/ 󰓩 bufname     \/...
