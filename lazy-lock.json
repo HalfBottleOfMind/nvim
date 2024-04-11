@@ -28,6 +28,7 @@
   "nvim-treesitter": { "branch": "master", "commit": "b0ac1135fe304edd34e18204304906744db0fe63" },
   "nvim-treesitter-context": { "branch": "master", "commit": "f19766163c18515fb4d3c12d572bf9cba6cdb990" },
   "nvim-web-devicons": { "branch": "master", "commit": "6e355632387a085f15a66ad68cf681c1d7374a04" },
+  "php.easy.nvim": { "branch": "main", "commit": "6f6a796031f228cf378fff763dbff27cf5238ed1" },
   "playground": { "branch": "master", "commit": "ba48c6a62a280eefb7c85725b0915e021a1a0749" },
   "plenary.nvim": { "branch": "master", "commit": "8aad4396840be7fc42896e3011751b7609ca4119" },
   "rose-pine": { "branch": "main", "commit": "9cd7d8aad3606a95d733a45d16275eb7a5a836a3" },
