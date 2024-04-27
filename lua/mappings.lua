@@ -6,3 +6,9 @@
 vim.keymap.set('n', '<leader>ff', function() require('telescope.builtin').find_files() end)
 vim.keymap.set('n', '<leader>fg', function() require('telescope.builtin').live_grep() end)
 vim.keymap.set('n', '<leader>fb', function() require('telescope.builtin').buffers() end)
+
+-- Navigate vim panes better
+vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
+vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
+vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
+vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
