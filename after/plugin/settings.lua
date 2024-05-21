@@ -13,3 +13,6 @@ opt.termguicolors = true
 
 opt.splitright = true
 opt.splitbelow = true
+
+opt.listchars='tab:→ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»'
+opt.list = true

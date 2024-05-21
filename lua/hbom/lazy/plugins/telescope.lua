@@ -5,6 +5,12 @@ return {
 	},
 	config = function()
 		require('telescope').setup{
+			defaults = {
+				file_ignore_patters = {
+					'node_modules',
+					'vendor',
+				},
+			},
 			pickers = {
 				buffers = {
 					sort_lastused = true,

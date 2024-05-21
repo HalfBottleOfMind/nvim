@@ -19,9 +19,16 @@ return {
 			}),
 			sources = cmp.config.sources({
 				{ name = 'nvim_lsp' },
-			}, {
-				{ name = 'buffer' },
+		}, {
+			{ name = 'buffer' },
 			})
+		})
+
+		cmp.setup.filetype({ 'sql' }, {
+			sources = {
+				{ name = 'vim-dadbod-completion' },
+				{ name = 'buffer' },
+			}
 		})
 	end
 }

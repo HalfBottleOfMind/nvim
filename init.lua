@@ -1,3 +1,2 @@
-require('hbom')
-require('settings')
 require('mappings')
+require('hbom')
