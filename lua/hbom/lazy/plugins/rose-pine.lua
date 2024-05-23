@@ -3,7 +3,7 @@ return {
 	name = 'rose-pine',
 	config = function()
 		local config = {
-			variant = 'moon',
+			variant = 'dawn',
 		}
 
 		require('rose-pine').setup(config)
