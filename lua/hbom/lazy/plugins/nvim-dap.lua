@@ -1,6 +1,7 @@
 return {
-	-- 'mfussenegger/nvim-dap',
-	-- config = function()
-	-- 	-- TODO: Add mappings
-	-- end
+	'mfussenegger/nvim-dap',
+	enabled = true,
+	config = function()
+		-- TODO: Add mappings
+	end
 }
