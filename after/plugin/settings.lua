@@ -16,3 +16,5 @@ opt.splitbelow = true
 
 opt.listchars='tab:→ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»'
 opt.list = true
+
+opt.clipboard = 'unnamedplus'
