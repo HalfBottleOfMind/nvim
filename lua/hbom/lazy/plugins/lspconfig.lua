@@ -32,7 +32,7 @@ return {
 				vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
 				vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
 				vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
-				vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
+				vim.keymap.set('n', '<Leader>k', vim.lsp.buf.signature_help, opts)
 				vim.keymap.set('n', '<Leader>D', vim.lsp.buf.type_definition, opts)
 				vim.keymap.set('n', '<Leader>rn', vim.lsp.buf.rename, opts)
 				vim.keymap.set({ 'n', 'v' }, '<Leader>ca', vim.lsp.buf.code_action, opts)
