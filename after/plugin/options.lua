@@ -18,3 +18,8 @@ opt.listchars='tab:→ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»'
 opt.list = true
 
 opt.clipboard = 'unnamedplus'
+
+opt.laststatus = 3
+opt.winbar = '%=%m %f'
+vim.cmd('hi clear winbar')
+vim.cmd('hi clear winbarnc')
